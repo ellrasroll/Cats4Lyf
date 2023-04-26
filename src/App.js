@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from "styled-components";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavBar>
+    
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+
+      </NavBar>
+
+  
+
+
     </div>
   );
 }
 
 export default App;
+
+const NavBar = styled.nav`
+  width: 100vw;
+  background-color: aliceblue;
+  box-sizing: border-box;
+  color: aliceblue;
+  padding: 20px;
+  display:flex;
+  justify-content: space-around;
+`
+
